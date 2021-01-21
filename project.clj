@@ -5,5 +5,10 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [ring/ring-core "1.8.2"]
-                 [ring/ring-jetty-adapter "1.8.2"]]
-  :repl-options {:init-ns hello-world.core})
+                 [ring/ring-jetty-adapter "1.8.2"]
+                 [ring/ring-json "0.5.0"]
+                 [fogus/ring-edn "0.3.0"]
+                 ]
+  :repl-options {:init-ns hello-world.core}
+  :plugins [[lein-ring "0.12.5"]]
+  )
